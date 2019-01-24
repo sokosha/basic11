@@ -66,7 +66,13 @@ footer{
   }
 }
 
-
+@media screen and (min-width: 480px) and (max-width: 768px){
+  .main-grid{
+    grid-template-columns:40% 40%;
+    grid-template-rows: repeat(6, 15%);
+    grid-gap:2%;
+  }
+}
 
 
 
