@@ -6,7 +6,7 @@ body {
   height: 100vh;
   grid-template-areas: 'header header'
                        'aside main'
-                       'footer footer'
+                       'footer footer';
 }
 
 header{
@@ -25,12 +25,37 @@ main{
   background-color: rgb(201, 231, 193);
 
 }
+/*屋慶名さんパターン*/
+/*.main-grid{
+  display: grid;
+  grid-template-areas: '1 1 1 1 '
+                       '1 1 1 1 '
+                       '1 1 1 1 '
+}
+.main-grid div{
+  background-color: white;
+  margin: 20px;
+}*/
+
+.main-grid{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: repeat(3,170px);
+  grid-gap:4% 4%;
+  justify-content: center;
+  padding: 20px 0;
+
+}
+
+.main-grid div{
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 footer{
   grid-area: footer;
   background-color: rgb(221, 214, 119);
 }
 
-main{
-  display: grid;
-  display: 
-}
